@@ -166,4 +166,6 @@
   // ▶ 方案 D：Blob / MySQL
   //   Blob 由 EdgeOne / ESA 自动注入，无需配置；
   //   MySQL 通过 Secret 配置 MYSQL_URLS（或 MYSQL_HOST 等分项）。
+  // wrangler.jsonc
+  "name": "openlist-worker",
 }
