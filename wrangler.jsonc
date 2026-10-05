@@ -180,4 +180,22 @@
   //   MySQL 通过 Secret 配置 MYSQL_URLS（或 MYSQL_HOST 等分项）。
   // wrangler.jsonc
   "name": "openlist-worker",
+  // ...
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
+    },
+    "traces": {
+      "enabled": false,
+      "head_sampling_rate": 1,
+      "persist": true
+    },
+    "issue_detection": {
+      "enabled": false
+    }
+  },
+  // ...
 }
